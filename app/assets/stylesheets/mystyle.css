@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-	background-image:url('../images/banner.png');
+	background-image:url('banner.jpg');
 	background-repeat:no-repeat;
 	height: 160px;
 	width:980px;
@@ -154,48 +154,48 @@ ul.single-vertical-menu  li > a:hover {
 }
 
 
-ul.droplinemenu {
-	position: relative;
-	background: #2f8d9a;
-	padding-top: 5px;
-	padding-bottom:5px;
-}
+ul.topbar{
+				position: relative;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: blue;
+				width: 980px;
+			}
+			ul.topbar > li{
+				margin-left: 20px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				display: inline;
+				height: 20px;
+				list-style-type: none;
+				cursor: pointer;
+			}
+			ul.topbar > li: hover{
+				background-color: gray;
+			}
+			ul.topbar > li > ul{
+				display: none;
+				position: absolute;
+				top: 30px;
+				left: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				width: 980cleanpx;
+				background-color: gray;
+			}
+			ul.topbar > li:hover > ul{
+				display: block;
+			}
+			ul.topbar > li > ul > li{
+				display: inline;
+				list-style-type: none;
+				padding: 5px 10px;
 
-ul.droplinemenu > li {
-	display: inline;
-	height: 20px;
-	padding: 5px 10px;
-	list-style-type: none;
-	cursor:pointer;
-}
-ul.droplinemenu > li:hover {
-	background:#cdcdcd;
-}
-
-ul.droplinemenu  > li > ul {
-	display: none;
-	position:absolute;
-	top:29px;
-	left:0px;
-	padding-top: 5px;
-	padding-bottom:5px;
-	width:940px;
-	background:#cdcdcd;
-}
-
-ul.droplinemenu  > li:hover > ul  {
-	display: block;
-}
-
-ul.droplinemenu  > li > ul > li {
-	display: inline;
-	cursor:pointer;
-	list-style-type: none;
-	padding: 5px 10px;
-}
-ul.droplinemenu  > li > ul > li:hover {
-	color: red;
-}
+			}
+			ul.topbar > li > ul > li: hover{
+				cursor: pointer;
+				color: red;
+			}
 
 .clear-both{
 	clear: both;
