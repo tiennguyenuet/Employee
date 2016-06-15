@@ -1,0 +1,7 @@
+<div class="center jumbotron">
+  <h1>Welcome to the Employee directory</h1>
+
+  <% if logged_in? && current_user.admin? %>
+     <%= link_to "Create User", signup_path, class: "btn btn-lg btn-primary" %>  
+  <% end %>
+</div>
